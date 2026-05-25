@@ -2,7 +2,6 @@
 
 <img src="./assets/intro.svg" alt="Hi, I'm Liz. AI coding / products / growth. Shipping things, not just ideas." />
 
-# Liz
 
 **04 · Hangzhou Normal University · currently in Hangzhou, China**  
 **A shameless Li Xiaolai fan.**
