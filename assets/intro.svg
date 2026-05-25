@@ -2,7 +2,7 @@
   <title id="title">Liz Intro</title>
   <desc id="desc">An elegant animated text intro with a waving hand for Liz's GitHub profile.</desc>
   <style>
-    /* 1. 现代无衬线体 - 宽字距营造呼吸感 */
+    /* 1. 现代无衬线体 */
     .sans {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 11px;
@@ -12,7 +12,7 @@
       fill: #666666;
     }
 
-    /* 2. 经典衬线体 - 核心视觉焦点 */
+    /* 2. 经典衬线体 */
     .serif {
       font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", serif;
       font-size: 34px;
@@ -22,21 +22,22 @@
 
     .italic {
       font-style: italic;
-      color: #333333;
+      fill: #333333;
     }
 
-    /* 3. 电影级缓动动画 */
+    /* 3. 缓动淡入动画 */
     .reveal {
       opacity: 0;
-      animation: slideFadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      will-change: transform, opacity;
+      animation: slideFadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.5s; }
-    .delay-3 { animation-delay: 0.9s; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.7s; }
 
     @keyframes slideFadeUp {
-      0% { opacity: 0; transform: translateY(12px); }
+      0% { opacity: 0; transform: translateY(8px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
@@ -48,21 +49,22 @@
     }
   </style>
 
-  <!-- 顶部：打招呼 + 经典的 React 挥手动画 -->
-  <g class="reveal delay-1">
-    <!-- 文本稍微左移，给 Emoji 留出空间，保持整体居中 -->
-    <text x="330" y="40" text-anchor="middle" class="sans">Hi, I'm Liz</text>
-    <g>
-      <!-- Emoji 字体稍大，锚点在手腕处 -->
-      <text x="390" y="41" text-anchor="middle" style="font-size: 15px;">👋</text>
-      <!-- 使用 SVG 原生动画，完美兼容 GitHub 且以(390,41)手腕处为圆心摇摆 -->
+  <!-- 顶部：打招呼 + 挥手动画 -->
+  <g transform="translate(360, 40)" class="reveal delay-1">
+    <!-- 文字向左偏移，保持视觉平衡 -->
+    <text x="-30" y="0" text-anchor="middle" class="sans">Hi, I'm Liz</text>
+    
+    <!-- 挥手组：以自身 (0,0) 为原点进行旋转 -->
+    <g transform="translate(30, 1)">
+      <text x="0" y="0" text-anchor="middle" style="font-size: 15px;">👋</text>
       <animateTransform 
         attributeName="transform" 
         type="rotate" 
-        values="0 390 41; 14 390 41; -8 390 41; 14 390 41; -4 390 41; 10 390 41; 0 390 41; 0 390 41" 
+        values="0; 14; -8; 14; -4; 10; 0; 0" 
         keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 1" 
         dur="2.5s" 
         repeatCount="indefinite" 
+        additive="sum"
       />
     </g>
   </g>
