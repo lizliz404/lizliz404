@@ -4,7 +4,7 @@
 
 # Liz
 
-**04 · Hangzhou Normal University · from Hengyang, Hunan · currently in Yuhang, Hangzhou**  
+**04 · Hangzhou Normal University · currently in Hangzhou, China**  
 **A shameless Li Xiaolai fan.**
 
 [![Website](https://img.shields.io/badge/Website-lizliz.xyz-111111?style=flat-square)](https://lizliz.xyz/)
