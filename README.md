@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Inter&size=20&duration=3000&pause=1000&color=111111&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Liz.;AI+coding+%2F+products+%2F+growth+%2F+shipping+things." alt="typing intro" />
+<img src="./assets/intro.svg" alt="Hi, I'm Liz. AI coding / products / growth. Shipping things, not just ideas." />
 
 # Liz
 
