@@ -1,8 +1,8 @@
 # Liz
 
-杭州，杭师大，04。写东西，做能点开的小产品。
+杭州，杭师大，04。写东西，做有趣有用的小产品。
 
-Hangzhou. I write, and I make small things you can open.
+Hangzhou. I write, and I make things that are interesting and useful.
 
 [lizliz.xyz](https://lizliz.xyz) · [X @lizliz404](https://x.com/lizliz404)
 
