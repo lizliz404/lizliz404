@@ -1,6 +1,6 @@
 # Liz
 
-杭州，杭师大，04。写东西，做有趣有用的小产品。
+杭州，04
 
 Hangzhou. I write, and I make things that are interesting and useful.
 
